@@ -1,0 +1,20 @@
+\documentclass[12pt,oneside,a4paper]{article}
+
+\usepackage{./custom}
+
+\begin{document}
+% title (fold)
+\include{tempTitle}
+% title (end)
+
+\section{Preparation of the data}
+The accesible data for the "kaggle"-competition is raw. The different parameters
+are not normilized and has to be modified in order to apply the \textsc{sklearn}
+algorithmes on it. The first modification we did was a circular permutation in
+order to "normalize" parameters of time, such as \textsc{month, daytime, etc}.
+The problem about time values is, that computers do not reckognize that January
+and December are "close" to one each other. We arranged those parameters around
+a clock, with an x-coordinate and a y-coordinate, so that with these two new
+variables january and december get "close".
+
+\end{document}
